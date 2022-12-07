@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: sans-serif;
+    /* overflow-y: hidden; */
+}
+
+nav img{
+
+}
+
+
+/* NAVBAR CSS */
+
+.navbar{
+    background-position: center;
+    background-image: url(./src/bgnavbar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo{
+    color: red;
+    font-size: 19px;
+}
+
+.logo h5{
+    color: white;
+    
+}
+
+
+/* Navbar */
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    gap: 16px;
+    justify-content: space-between;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.navbar .slide img{
+    width: 24px;
+    height: 24px;
+    padding: 12px 16px;
+}
+
+.navbar .slide .shop {
+    padding-top: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: all 0.8s;
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 41px;
+    height: 26px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+/* Card CSS */
+
+
+.card_luar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    /* background-color: wheat; */
+    width: 230px;
+    height: 290px;
+    padding: 20px;
+    margin: 150px 20px 80px 20px ;
+    justify-content: start;
+    border: 1px solid red;
+}
+
+.card h3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: red;
+}
+
+.card-cover{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: -70px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover1 img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+
+}
+
+.card-content{
+    /* width: 100%; */
+    /* height: 200px; */
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.card .card-content p{
+    color: black;
+}
+
+.card a{
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    /* display: flex; */
+    text-align: center;
+    /* align-items: center; */
+    width: 100px;
+    padding: 10px 15px;
+    margin: 20px;
+    /* height: 40px; */
+    display: inline-block;
+    font-size: 13px;
+    /* position: relative; */
+}
+
+.card a:hover{
+    transition: all 0.5s;
+    background-color: red;
+}
+
+
+
+
+/* BOOK A TABLE CSS */
+
+
+.table_luar{
+    background: url(./src/book_a_table.png);
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    /* z-index: 2; */
+    background-attachment: fixed;
+    margin-bottom: 100px;
+}
+
+.table_luar .table_book{
+    margin-left: 17%;
+}
+
+.table_luar .table_teks{
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.table_luar .table_teks h2{
+    padding: 20px 0;
+}
+
+.table_luar .table_teks p{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.table_luar .table_input{
+    display: inline-block;
+    margin: 13px ;
+
+}
+
+.table_luar .table_input input{
+    padding: 10px 60px 10px 15px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.table_luar .table_input button{
+    background-color: brown;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 4px;   
+}
+
+
+
+/* MENU CSS */
+.menu_luar{
+    text-align: center  ;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.menu_luar h2{
+    margin-bottom: 80px;
+}
+
+.menu_dalam{
+    width: 300px;
+    height: 300px;
+    /* padding-left: 30px; */
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.menu_luar .menu .foto_menu h4{
+    color: white;
+    margin-top: -4px;
+    background-color: brown;
+    /* margin-left: 30px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: normal;
+    width: 100%;
+}
+
+
+/* LIST MENU CSS */
+.list_menu{
+    position: relative;
+    width: 100%;
+    height: 1380px;
+    background-image: url(./src/popcorn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_menu .list_luar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(203, 8, 8, 0.8);
+    z-index: 1;
+    text-align: center;
+}
+
+.list_menu .list_luar h3{
+    color: white;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.list_menu .list_luar h2{
+    color: white;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.list_menu .list_luar .list_pilihan1{
+    margin-top: 50px;
+}
+
+.list_menu .list_luar .list_pilihan{
+    display: inline-block;
+    /* justify-content: space-around; */
+    /* flex-direction: row; */
+    margin-left: 10px;
+    border: 2px solid black;
+}
+
+.list_menu .list_luar .list_pilihan a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.list_menu .list_luar .list_pilihan:hover{
+    background-color: black;
+    border: 2px solid white;
+}
+
+.list_menu .list_luar .list_pilihan a:hover{
+    color: white;
+}
+
+
+.list_menu .list_luar .list_pilihan li{
+    list-style: none;
+    margin: 6px 20px;
+}
+
+.list_menu .list_luar .daftar_menu{
+    margin: 50px auto;
+    width: 70%;
+    height: 890px;
+    background-color: white;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.list_menu .list_luar .daftar_menu .blog1{
+    width: 450px;
+    height: 150px;
+    border: 1px solid red;
+    margin-left: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.list_menu .list_luar .daftar_menu .blog1 img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    padding-top: px;
+} 
+
+.list_menu .list_luar .daftar_menu .blog1 a{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 4px 17px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.list_menu .list_luar .daftar_menu .blog1 h6{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.list_menu .list_luar .daftar_menu .blog1 p{
+    /* display: inline-block; */
+    font-size: 13px;
+    margin-top: 15px;
+    padding-left: 160px;
+}
+
+
+/* CHEFS  CSS */
+
+.chef{
+    text-align: center  ;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.chef .chef_luar {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.chef .chef_luar .foto_chef .chef_dalam{
+    width: 250px;
+    height: 250px;
+    /* padding-left: 30px; */
+}
+
+.chef .chef_luar .foto_chef h4 {
+    color: white;
+    margin-top: -4px;
+    background-color: brown;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.chef .chef_luar .foto_chef  h5{
+    color: white;
+    margin-top: -4px;
+    background-color: brown;
+    padding-top: px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+/* EVENT CSS */
+
+#event {
+    background-image: url(./src/bgevent.jpg);
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+}
+
+#event .container {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#event .container .title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+#event .card-event {
+    display: flex;
+    width: 75%;
+    height: 50%;
+    background-color: white;
+}
+
+#event .count-right{
+    display: flex;
+    flex-direction: column;
+}
+
+#event .card-event img {
+    width: 480px;
+    height: 100%;
+}
+
+#event .card-event .desc {
+    padding: 28px 32px;
+    text-align: left;
+    color: black;
+}
+
+#event .card-event .desc p {
+ padding-top: 20px;
+}
+
+#event .count {
+    display: flex;
+    gap: 32px;
+    padding-left: 32px;
+}
+
+#event .card-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 90px;
+    color: white;
+    background-color: brown;
+}
+
+#event .card-count h1 {
+    font-size: 32px;
+}
+
+/* NEWS CSS */
+
+#news .container .teks{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#news .container .card-news img{
+    width: 350px;
+    height: 250px;
+}
+
+#news .container .card-news{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#news .container .card-news .card-news1 .card-teks{
+    width: 300px;
+    height: 200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    position: relative;
+    top: -25px;
+}
+
+#news .container .card-news{
+    
+}
+
+#news .container .card-news .card-teks{
+    align-items: center;
+    text-align: center;
+}
+
+#news .container .card-news .card-teks a{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 8px 10px;
+    display: inline-block;
+    position: relative;
+    top: -25px;
+}
+
+#news .container .card-news .card-teks h3{
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* FOOTER CSS */
+
+#footer{
+    background-color: black;
+    box-sizing: border-box;
+    margin-top: 100px;
+    width: 100%;
+}
+
+#footer .container {
+    color: white;
+}
+
+#footer .container .footer-col{
+    width: 25%;
+    height: 350px;
+    background-color: red;
+}
+
+#footer .container .footer-col .social-links img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+
+/* Responsive */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* Ukuran Mobile */
+@media screen  and (max-width: 576px) {
+    .menu-toggle{
+        display: flex;
+        
+    }
+    .navbar nav ul{
+        position: absolute;
+        right: 0;
+        top: 101px;
+        width: 100%;
+        height: 50vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: all 0.5s;   
+        opacity: 0;
+    }
+
+    nav .slide img {
+        display: none;
+    }
+
+    .navbar nav ul.slide {
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0);
+    }
+
+    .table_luar{
+        height: 480px;
+    }
+
+    .list_menu{
+        height: 2330px;
+    }
+
+    .list_menu .list_luar .daftar_menu{
+        height: 1750px;
+    }
+
+    .list_menu .list_luar .list_pilihan1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .list_menu .list_luar .list_pilihan{
+        margin-bottom: 20px;
+    }
+
+    .list_menu .list_luar .daftar_menu .blog1{
+        width: 93%;
+        position: relative;
+        margin-bottom: 20px;
+        left: -40px;
+    }
+
+
+    .list_menu .list_luar .daftar_menu .blog1 img{
+        width: 100px;
+        height: 150px;
+    }
+
+    .list_menu .list_luar .daftar_menu .blog1 p{
+        padding-left: 110px;
+    }
+
+
+    .event{
+        height: 1200px;
+    }
+
+    .event .event_luar .event1 img{
+        width: 130%;
+        margin-left: -50px;
+    }
+
+    #event {
+        height: 135vh;
+    }
+
+    #event .card-event {
+        flex-direction: column;
+    }
+    
+    #event .card-event img {
+        width: 100%;
+    }
+
+    #event .card-event {
+        height: 100vh;
+    }
+
+    #event .count-right{
+        height: 100vh;
+    }
+
+    #event .count {
+        justify-content: center;
+        padding-left: 0px;
+        gap: 8px;
+    }
+
+  }
